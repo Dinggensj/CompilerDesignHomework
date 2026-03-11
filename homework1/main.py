@@ -26,7 +26,7 @@ def calculate_similarity(code1, code2, n):
         return 0
     
     common = set1 & set2
-    similarity = len(common) / min(len(set1), len(set2))
+    similarity = len(common) / len(set1)
 
     return similarity
 
